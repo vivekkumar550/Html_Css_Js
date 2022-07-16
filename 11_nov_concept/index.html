@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Assignment</title>
+    <style>
+        #parentDiv {
+            width: 400px;
+            box-shadow: 0 0 20px black;
+            padding: 30px;
+            margin: 200px auto;
+            color: white;
+            background-color: brown;
+        }
+
+        #btn {
+            text-align: center;
+        }
+
+        body {
+            background-image: url("https://images.pexels.com/photos/998641/pexels-photo-998641.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+        }
+    </style>
+    <script>
+        function fnDOM() {
+            var hRef = document.getElementById("h1");
+            hRef.innerText = "Good Morning Vivek"
+            hRef.style.color = "black"
+        }
+
+        function fn1DOM() {
+            var hRef = document.getElementById("h1");
+            hRef.innerText = "Good Evening Vivek"
+            hRef.style.color = "yellow"
+        }
+
+        function fn2DOM() {
+            var hRef = document.getElementById("h1");
+            hRef.innerText = "Good Night Vivek"
+            hRef.style.color = "cyan"
+        }
+    </script>
+</head>
+
+<body>
+    <div id="parentDiv">
+        <div>
+            <h3 id="h1" style="text-align: center;">Hello Vivek Kumar !!</h3>
+        </div>
+        <div id="btn">
+            <button onclick="fnDOM()">Good Morning</button>
+            <button onclick="fn1DOM()">Good Evening</button>
+            <button onclick="fn2DOM()">Good Night</button>
+        </div>
+    </div>
+</body>
+
+</html>

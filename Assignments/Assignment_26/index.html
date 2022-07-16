@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pyramid shape</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: cornsilk;
+        }
+
+        #index1 {
+            position: relative;
+            height: 0;
+            width: 0;
+            margin: auto;
+            top: 5rem;
+            border-right: 200px solid cornsilk;
+            border-bottom: 200px solid brown;
+            border-left: 200px solid cornsilk;
+            z-index: 200;
+        }
+
+        #index2 {
+            position: relative;
+            height: 0;
+            width: 0;
+            margin: auto;
+            border-right: 200px solid cornsilk;
+            border-bottom: 200px solid blueviolet;
+            border-left: 200px solid cornsilk;
+            z-index: 100;
+        }
+
+        #index3 {
+
+            position: relative;
+            height: 0;
+            width: 0;
+            margin: auto;
+            top: -5rem;
+            border-right: 200px solid cornsilk;
+            border-bottom: 200px solid black;
+            border-left: 200px solid cornsilk;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="index1"></div>
+    <div id="index2"></div>
+    <div id="index3"></div>
+</body>
+
+</html>

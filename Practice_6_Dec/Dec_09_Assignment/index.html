@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        div {
+            width: 500px;
+            height: 200px;
+            position: absolute;
+            margin: auto;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            box-shadow: 0 0 10px black;
+            padding: 30px;
+            background-color: rgb(197, 85, 85);
+        }
+    </style>
+    <script>
+        function fn() {
+            var a = document.getElementById("num1").value;
+            var b = document.getElementById("num2").value;
+            var c = document.getElementById("num3").value;
+            // Using Closure
+            function multiply(a) {
+                return function (b) {
+                    return function (c) {
+                        document.getElementById("results").innerHTML = (a * b * c);
+                    }
+                }
+            }
+            multiply(a)(b)(c);
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        Enter First Number:
+        <input type="number" value="" id="num1"><br><br>
+        Enter Second Number:
+        <input type="number" value="" id="num2"><br><br>
+        Enter Third Number:
+        <input type="number" value="" id="num3"><br><br>
+        <input type="submit" value="Multiply" onclick="return fn()"><br><br>
+        <b>The Result is:</b>
+        <span id="results"></span>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+h3{
+    text-align: center;
+}
+input{
+    outline: none;
+    border: none;
+    background-color: #e5e5e5;
+    margin: 0.25rem;
+    padding: 0.2rem;
+}
+#container{
+    margin: auto;
+    max-width: 50vw;
+}
+
+/* @media (min-width: 500px){
+    body{
+        background-color: #f0000f;
+    }
+} */
+
+@media (max-width: 500px){
+    body{
+        background-color: #f0000f;
+    }
+}

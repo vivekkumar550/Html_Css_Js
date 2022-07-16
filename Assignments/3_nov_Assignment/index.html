@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Counter App</title>
+    <style>
+        body {
+            margin: 0;
+            text-align: center;
+            background-color: cornsilk;
+        }
+
+        button:hover,
+        input:hover {
+            background-color: brown;
+        }
+
+        button {
+
+            font-style: italic;
+            font-size: 20px;
+        }
+
+        input {
+            margin-top: 10px;
+            height: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Counter App</h2>
+    <button id="b1" value="1" onclick="dispaly('b1')">Counter</button>
+    <button id="b2" onclick="Increment('b2')">Increment(+) </button>
+    <button id="b3" onclick="Decrement('b3')">Decrement(-)</button>
+    <br>
+    <input type="text" id="textbox" value="0">
+    <script>
+        function dispaly(id) {
+            let counter = document.getElementById(id).value
+            let box = document.getElementById("textbox")
+            box.value = counter
+            return counter
+        }
+        function getvalue(id) {
+            let num = document.getElementById(id).value
+            return num
+        }
+        function Increment(id) {
+            let sum = getvalue("textbox")
+            sum = parseInt(sum) + 1
+            let box = document.getElementById("textbox")
+            box.value = sum
+
+        }
+        function Decrement(id) {
+            let sum = getvalue("textbox")
+            sum = parseInt(sum) - 1
+            let box = document.getElementById("textbox")
+            box.value = sum
+
+        }
+
+    </script>
+</body>
+
+</html>

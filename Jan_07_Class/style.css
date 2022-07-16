@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.add-btn{
+    padding: 20px;
+    width: 270px;
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 5px;
+    margin: 20px auto 20px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+
+}
+.add-btn:hover{
+    background-color: rgba(0,0,0,0.8);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.book{
+    padding: 20px;
+    min-width: 200px;
+    
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            box-shadow: 0 0 10px black;
+            padding: 10px;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <script>
+        var correct_way = /^[A-Za-z]+$/;
+        function myFun() {
+            var a = document.getElementById('username').value;
+            if (a == "") {
+                document.getElementById("message").innerHTML = "** Please Fill User Name"
+                return false;
+            }
+            if (a.length < 3) {
+                document.getElementById("message").innerHTML = "** User Name Must be 3 Charactor "
+                return false;
+            }
+            if (a.length > 10) {
+                document.getElementById("message").innerHTML = "** User Name Must Less than 10 Charactor "
+                return false;
+            }
+            if (a.match(correct_way))
+                true;
+            else {
+                document.getElementById("message").innerHTML = "** Only alphabets are allow "
+                return false;
+            }
+
+        }
+    </script>
+    <div>
+        <form onsubmit="return myFun()">
+            Username: <input type="text" value="" id="username">
+            <span id="message"></span>
+            <br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/jpg" href="fav.jpg" />
+    <meta>
+    <link rel="stylesheet" href="style.css">
+    <title>Application form</title>
+</head>
+
+<body>
+    <div id="container">
+        <h3>Application for Scholarship</h3>
+        <form>
+            <input type="text" placeholder="First Name" />
+            <input type="text" placeholder="Last Name" />
+            <input type="email" placeholder="Email" />
+            <input type="tel" placeholder="Mobile Number" maxlength="10" minlength="5" />
+            <br />
+            <fieldset>
+                <legend>Select Gender</legend>
+                <input type="radio" name="gender" id="male" />
+                <label for="male">Male</label>
+                <input type="radio" name="gender" id="female" />
+                <label>Female</label>
+                <input type="radio" name="gender" id="other" />
+                <label for="other">Other</label>
+            </fieldset>
+            <br />
+            <input type="date" />
+            <input type="range" />
+            <input type="month" />
+            <input type="file" />
+            <input type="text" placeholder="Gurdian Name" />
+            <textarea placeholder="Why do you want this Scholarship"></textarea>
+            <textarea placeholder="Address"></textarea>
+            <select>
+                <option>GEN</option>
+                <option>SC/ST</option>
+                <option>OBC</option>
+                <option>EWS</option>
+                <option>NOT TO SAY</option>
+            </select>
+            <input type="submit" />
+            <input type="reset" />
+        </form>
+    </div>
+</body>
+
+</html>

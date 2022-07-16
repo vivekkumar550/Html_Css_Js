@@ -1,0 +1,18 @@
+body {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ height: 100vh;
+
+}
+
+*{
+   padding: 0; 
+   margin: 0;
+}
+.container {
+    width: 500px;
+    height: 500px;
+    background-color: brown;
+    border-radius: 15px;
+}

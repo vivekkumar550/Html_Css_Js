@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            margin: 200px auto;
+            padding: 30px;
+            box-shadow: 0 0 10px black;
+            text-align: center;
+            background-color: brown;
+        }
+    </style>
+    <script>
+        function fn(wish) {
+            var h1Ref = document.getElementById("i1")
+            switch (wish) {
+                case "GM":
+                    h1Ref.innerText = "Good Morning Vivek"
+                    h1Ref.style.color = "blue"
+                    break;
+                case "GA":
+                    h1Ref.innerText = "Good Afernoon Vivek"
+                    h1Ref.style.color = "green"
+                    break;
+                case "GE":
+                    h1Ref.innerText = "Good Evening Vivek"
+                    h1Ref.style.color = "white"
+                    break;
+                case "GN":
+                    h1Ref.innerText = "Good Night Vivek"
+                    h1Ref.style.color = "cyan"
+
+
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h2 id="i1">Hello Vivek!!</h2>
+        <button onclick="fn('GM')">Good Morning</button>
+        <button onclick="fn('GA')">Good Afternoon</button>
+        <button onclick="fn('GE')">Good Evening</button>
+        <button onclick="fn('GN')">Good Night</button>
+    </div>
+</body>
+
+</html>

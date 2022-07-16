@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 500px;
+            margin: 100px auto;
+            box-shadow: 0 0 10px black;
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h2>User Data</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus voluptates rem impedit necessitatibus hic
+            optio quasi neque deleniti a eum veniam sed maxime quo, ex, voluptatem, illum eveniet pariatur eos!
+        </p>
+        <button onclick="GetUserData()">Fetch Data</button>
+        <table id="tbl">
+            <tr>
+                <th>ID</th>
+                <th>NAME</th>
+                <th>EMAIL</th>
+            </tr>
+        </table>
+    </div>
+    <script>
+        function GetUserData() {
+            var tblRef = document.getElementById('tbl')
+            fetch("https://jsonplaceholder.typicode.com/users").then((res) => {
+                return res.json();
+            }).then((actualData) => {
+                console.log(actualData);
+                actualData.map(function (element) {
+                    var trRef = document.createElement('tr');
+                    var td1Ref = document.createElement('td');
+                    var td2Ref = document.createElement('td');
+                    var td3Ref = document.createElement('td');
+
+                    td1Ref.append(element.id);
+                    td2Ref.append(element.name);
+                    td2Ref.append(element.email);
+
+
+                    trRef.appendChild(td1Ref);
+                    trRef.appendChild(td2Ref);
+                    trRef.appendChild(td3Ref);
+
+                    tblRef.appendChild(trRef);
+                })
+            });
+        }
+    </script>
+</body>
+
+</html>

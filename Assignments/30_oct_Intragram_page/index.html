@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Instagram post</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background-color: rgba(32, 204, 175, 0.205);
+        }
+
+        #container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            padding: 40px 540px;
+            width: 275px;
+        }
+
+        #top {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            padding-top: 10px;
+            border-radius: 5px;
+        }
+
+        #image {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+        }
+
+        #bottom {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            background-color: white;
+        }
+
+        #comment {
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        #name {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+
+        #send {
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="maincontainer">
+        <div id="container">
+            <div id="top">
+                <span class="material-icons"> account_circle </span>
+                <p id="name">Vivek</p>
+                <span class="material-icons"> more_horiz </span>
+            </div>
+            <div id="image">
+                <img src="https://cdn.quotesgram.com/img/16/70/406853144-screen1136x1136.jpeg" alt="Image"
+                    style="height: 400px; width: 275px" />
+            </div>
+            <div id="bottom">
+                <span id="fav" class="material-icons"> favorite_border </span>
+
+                <span id="chat" class="material-icons"> chat_bubble_outline </span>
+                <span id="send" class="material-icons"> send </span>
+
+                <span id="bord" class="material-icons"> bookmark_border </span>
+            </div>
+            <div id="comment">
+                <p><b>Liked by vivek and others</b></p>
+                <p>
+                    <b> vivek </b> Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Quam
+                </p>
+                <p><b>view comments</b></p>
+                <p style="opacity: 0.5">Add a comment</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

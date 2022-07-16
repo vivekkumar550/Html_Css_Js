@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        function fnExchangeText() {
+            var pRef = document.getElementById("p1");
+            pRef.innerText = "Hello React"
+            var pRef = document.getElementById("p2");
+            pRef.innerText = "Bye JavaScript"
+        }
+    </script>
+</head>
+
+<body>
+    <p id="p1">JavaScript</p>
+
+    <p id="p2">Bye React</p>
+    <button onclick="fnExchangeText()">Exchange Text</button>
+</body>
+
+</html>
